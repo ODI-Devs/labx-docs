@@ -44,9 +44,13 @@ python -m venv venv
 source venv/bin/activate
 ```
 
-- **Windows PowerShell/CMD**
+- **Windows PowerShell**
 ```py
 .\venv\Scripts\Activate.ps1
+```
+- **Windows CMD**
+```py
+.\venv\Scripts\Activate
 ```
 
 Note: If you get an execution policy error on Windows, run PowerShell as admin and execute:
@@ -61,7 +65,7 @@ pip install mkdocs mkdocs-material
 
 Check Installation
 ```py
-pip install mkdocs mkdocs-material
+mkdocs --version
 ```
 
 
