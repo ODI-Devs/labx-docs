@@ -2,10 +2,10 @@ site_name: LabXChange
 
 nav:
   - Home:
-      - Introduction: introduction.md
+      - Introduction: index.md
       - Getting Started: getting_started.md
   - Modules:
-      - User Management: modules/user_management.md
+      - User Management: modules/index.md
       - Dashboards: modules/dashboards.md
       - Patients: modules/patients.md
       - Orders: modules/orders.md
