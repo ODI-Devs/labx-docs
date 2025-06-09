@@ -2,20 +2,41 @@ site_name: LabXChange
 
 nav:
   - Home:
-    - Another Home:  index.md
-    - Sample Module: index.md
-  - Sample Nav: sample_module/sample.md
-  - About: about.md
+      - Introduction: introduction.md
+      - Getting Started: getting_started.md
+  - Modules:
+      - User Management: modules/.\user_management.md
+      - Dashboards: modules/dashboards.md
+      - Patients: modules/patients.md
+      - Orders: modules/orders.md
+      - Results: modules/results.md
+      - Appointments: modules/appointments.md
+      - Biometrics: modules/biometrics.md
+      - Organizations: modules/organizations.md
+      - Locations: modules/locations.md
+      - Providers: modules/providers.md
+      - Diagnosis Codes: modules/diagnosis_codes.md
+      - Test: modules/tests.md
+      - Insurance: modules/insurances.md
+      - Medications: modules/medications.md
+      - Ask on Order Entry: modules/AOE.md
+      - Notifications: modules/notifications.md
+      - Banner Messages: modules/banner_messages.md
+  - User Guide: about.md
 
 theme:
-    name: material
-    palette:
-        primary: 'teal'
-        accent: 'indigo'
-    features:
-        - navigation.tabs
-        - navigation.top
-        - navigation.sections
-    font:
-        text: Roboto
-        code: Roboto Mono
+  name: material
+  palette:
+    primary: "blue"
+    accent: "indigo"
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.sections
+    - navigation.expand
+    - navigation.tracking
+    - navigation.instant
+    - content.code.copy
+  font:
+    text: Poppins
+    code: Roboto Mono
