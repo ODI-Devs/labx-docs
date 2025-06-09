@@ -1,5 +1,6 @@
 # LabX Docs
 
+
 [![Python](https://img.shields.io/badge/python-3.7%2B-blue)](https://www.python.org/)
 [![MkDocs](https://img.shields.io/badge/mkdocs-latest-green)](https://www.mkdocs.org/)
 [![Material](https://img.shields.io/badge/theme-material-blueviolet)](https://squidfunk.github.io/mkdocs-material/)
@@ -90,6 +91,9 @@ labx-docs/
 ```
 - docs/: contains Markdown files
 - mkdocs.yml: the main configuration file
+
+### 6. Deployed Site
+- Click : https://odi-devs.github.io/labx-docs/
 
 ## LabX Team
 [![Project_Manager](https://img.shields.io/badge/John_Matthew_Dino-Project_Manager-blue)]()
