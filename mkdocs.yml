@@ -22,7 +22,17 @@ nav:
       - Ask on Order Entry: modules/AOE.md
       - Notifications: modules/notifications.md
       - Banner Messages: modules/banner_messages.md
-  - User Guide: about.md
+  - Team: team/index.md
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 
 theme:
   name: material
@@ -30,13 +40,13 @@ theme:
     primary: "blue"
     accent: "indigo"
   features:
-    - navigation.tabs
     - navigation.top
     - navigation.sections
-    - navigation.expand
     - navigation.tracking
-    - navigation.instant
     - content.code.copy
+    - navigation.tabs
+    - navigation.tabs.sticky
+
   font:
     text: Poppins
     code: Roboto Mono

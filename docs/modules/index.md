@@ -26,8 +26,35 @@ The **User Management** module is responsible for handling all operations relate
 
 ## Features
 
-- **User Registration and Management**  
-  Allows creation and editing of users within the system.
+### **I. User Registration and Management**
+
+Allows creation and editing of users within the system.
+
+#### User Creation
+
+1.  Navigate to **"User Management"** tab
+2.  Click **"Create User"** button
+3.  Fill in the required information from the form.
+4.  Click **"Create User"** button to create user
+
+**Alternate Flow**
+
+**Scenario**: Invalid or Missing Input Format
+
+1.  User enters Invalid data or Miss a required field (e.g email)
+2.  System returns an input validation for that specific field **"Invalid email address"**
+3.  User remain in the creation for modal and recheck
+
+#### User Update
+
+1.  Navigate to **"User Management"** tab
+2.  Click **"..."** icon in the "Actions" column
+3.  Edit the desired information from the form.
+4.  Click **"Update User"** button to save changes
+
+### **II. User Deactivation/Deletion**
+
+Supports soft deletion (archiving) or deactivation of user accounts.
 
 - **User Authentication**  
   Provides secure login and logout functionality using session- or token-based authentication.
@@ -38,11 +65,8 @@ The **User Management** module is responsible for handling all operations relate
 - **Role-Based Access Control (RBAC)**  
   Assigns roles (e.g., Admin, Client Admin, Staff, and Providers) to manage permissions.
 
-- **Table Filtering**
-  Supports filtering by status and keyword search.
-
-- **User Deactivation/Deletion**  
-  Supports soft deletion (archiving) or deactivation of user accounts.
+- **Table Filtering**  
+   Supports filtering by status and keyword search.
 
 - **Two Factor Authentication**  
   Supports two-factor authentication via email for enhanced login security.
