@@ -1,0 +1,12 @@
+:root {
+  --md-text-font-size: 0.9rem;
+  --md-typeset-font-size: 0.9rem;
+}
+
+.md-typeset h1 {
+  font-size: 2rem;
+}
+
+.md-typeset h2 {
+  font-size: 1.5rem;
+}
