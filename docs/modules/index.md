@@ -2,13 +2,15 @@
 
 ## Overview
 
+---
+
 The **User Management** module is responsible for handling all operations related to user accounts within the system. This includes user registration, authentication, role-based access control, and account settings.
 
 ![Alt text](../img/module%20screenshots/user_management/Usermanagement.png)
 
----
-
 ## User Roles
+
+---
 
 - **Admin**  
   This role oversees the entire system and has permission to access all modules and data within the system.
@@ -22,39 +24,80 @@ The **User Management** module is responsible for handling all operations relate
 - **Providers**  
   Provider users have the same privileges as staff but are limited to their assigned patients within the organization.
 
----
-
 ## Features
 
-### **I. User Registration and Management**
+---
+
+### I. User Registration and Management
 
 Allows creation and editing of users within the system.
 
-#### User Creation
+???+ quote "User Creation"
 
-1.  Navigate to **"User Management"** tab
-2.  Click **"Create User"** button
-3.  Fill in the required information from the form.
-4.  Click **"Create User"** button to create user
+    === "Creation - User Guide"
 
-**Alternate Flow**
+        1.  Navigate to **"User Management"** tab
+        2.  Click **"Create User"** button
+        3.  Fill in the required information from the form.
+        4.  Click **"Create User"** button to create user
 
-**Scenario**: Invalid or Missing Input Format
+    === "Creation - Alternate Flows"
 
-1.  User enters Invalid data or Miss a required field (e.g email)
-2.  System returns an input validation for that specific field **"Invalid email address"**
-3.  User remain in the creation for modal and recheck
+        **Scenario 1**: Duplicate Email
 
-#### User Update
+        1.  User enters existing email within the same Organization
+        2.  System returns a error toaster saying **"Error creating user : user with this email already exist"**
+        3.  User remain in the creation form modal to recheck
 
-1.  Navigate to **"User Management"** tab
-2.  Click **"..."** icon in the "Actions" column
-3.  Edit the desired information from the form.
-4.  Click **"Update User"** button to save changes
+        **Scenario 2**: Invalid or Missing Input Format
 
-### **II. User Deactivation/Deletion**
+        1.  User enters Invalid data or Miss a required field (e.g email)
+        2.  System returns an input validation for that specific field **"Invalid email address"**
+        3.  User remain in the creation form modal to recheck
 
-Supports soft deletion (archiving) or deactivation of user accounts.
+???+ quote "User Update"
+
+    === "Update - User Guide"
+
+        1.  Navigate to **"User Management"** tab
+        2.  Click **"..."** icon in the "Actions" column
+        3.  Click **"Edit"** button
+        4.  Edit the desired information from the form.
+        5.  Click **"Update User"** button to save changes
+
+    === "Update - Alternate Flows"
+
+           **Scenario**: Invalid Input Format
+
+          1. User enters Invalid data field (e.g email)
+          2. System returns an input validation for that specific field **"Invalid email address"**
+          3. User remain in the creation form modal to recheck
+
+### II. User Deactivation/Activation
+
+Supports deactivation or activation of user accounts.
+
+???+ quote "User Deactivation/Activation"
+
+    === "User Guide"
+
+        1.  Navigate to **"User Management"** tab
+        2.  Click **"..."** icon in the "Actions" column of the desired row
+        3.  Click **"Deactivate"** or **"Activate"** button
+        5.  Click **"Update User"** button to save changes
+
+### III. User Archive
+
+Supports soft-deletion(archive) of User accounts
+
+???+ quote "User Archive"
+
+    === "User Guide"
+
+        1.  Navigate to **"User Management"** tab
+        2.  Click **"..."** icon in the "Actions" column of the desired row
+        3.  Click **"Archive"** button
+        5.  Click **"Update User"** button to save changes
 
 - **User Authentication**  
   Provides secure login and logout functionality using session- or token-based authentication.

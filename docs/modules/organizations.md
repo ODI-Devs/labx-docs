@@ -14,7 +14,7 @@ The **Organization** module is responsible for handling all operations related t
 - **Organization Deactivation/Activation**  
   Supports activation and deactivation of Organization.
 
-- **Organization Deactivation/Deletion**  
+- **Organization Archive**  
   Supports soft-deletion(archive) of Organization.
 
 - **Two Factor Authentication**  
